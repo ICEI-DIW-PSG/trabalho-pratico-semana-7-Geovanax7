@@ -1,13 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geovana Makeup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <h1>Olá mundo</h1>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagens/1.png" alt="Logo Geovana Makeup">
+      <span>Geovana Makeup</span>
+    </div>
+    <nav>
+      <a href="index.html" class="ativo"><i class="fa-solid fa-house-chimney"></i> Início</a>
+      <a href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a>
+      <a href="#servicos"><i class="fa-solid fa-wand-magic-sparkles"></i> Serviços</a>
+      <a href="#contato"><i class="fa-solid fa-phone"></i> Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Realce sua beleza com confiança</h1>
+      <p>Maquiagem profissional para todas as ocasiões</p>
+      <a href="agendamento.html?servico=Agendamento Geral" class="btn"><i class="fa-solid fa-calendar-check"></i> Agende seu horário</a>
+    </div>
+    <div class="hero-img">
+      <img src="imagens/geovana.png" alt="Geovana Souza">
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="sobre-img">
+      <img src="imagens/quemsou.png" alt="Geovana Souza">
+    </div>
+    <div>
+      <h2><i class="fa-solid fa-heart"></i> Quem sou</h2>
+      <p>
+        Olá, sou <strong>Geovana</strong>, maquiadora profissional com um olhar jovem e experiência sólida, apaixonada por transformar beleza em confiança.
+      </p>
+      <p>
+        Com apenas 18 anos, já carrego três anos de experiência e cinco certificações em automaquiagem e técnica profissional.
+      </p>
+      <p>
+        Minha especialidade é a maquiagem social, noivas e produções editoriais.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <h2><i class="fa-solid fa-star"></i> Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon-circle"><i class="fa-solid fa-ring"></i></div>
+        <h3>Maquiagem Noiva</h3>
+        <p>Preparação completa para o grande dia.</p>
+        <p><strong>R$ 450,00</strong></p>
+        <a href="servico-noiva.html" class="btn">Saiba mais</a>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><i class="fa-solid fa-champagne-glasses"></i></div>
+        <h3>Maquiagem Social</h3>
+        <p>Eventos, festas e formaturas.</p>
+        <p><strong>R$ 160,00</strong></p>
+        <a href="servico.social.html" class="btn">Saiba mais</a>
+      </div>
+      <div class="card">
+        <div class="icon-circle"><i class="fa-solid fa-camera-retro"></i></div>
+        <h3>Editorial</h3>
+        <p>Ensaios fotográficos e produções especiais.</p>
+        <p><strong>R$ 250,00</strong></p>
+        <a href="servico-editorial.html" class="btn">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2><i class="fa-solid fa-envelope"></i> Agende seu horário</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>© 2025 Geovana Makeup - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>

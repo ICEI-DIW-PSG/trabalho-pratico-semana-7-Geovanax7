@@ -13,32 +13,27 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: GEOVANA DE SOUZA FERREIRA
+- Matricula: 1545034
+- Proposta de projeto escolhida:  Organizações e Equipes
+- Breve descrição sobre seu projeto: Melhorar o desenvolvimento e a funcionalidade do neu site, para ajudar e facilitar a divulgação e busca das minhas clientes.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![tela inicial](<imagens/tela inical.jpeg>)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![detalhe01](<imagens/detalhe 01.jpeg>)
+![detalhe02](<imagens/detalhe 02.jpeg>)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
-```javascript
-const dados = [
-  {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
-  }
-]
-```
+// Efeito suave de rolagem nos links do menu
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const alvo = document.querySelector(this.getAttribute('href'));
+    alvo.scrollIntoView({ behavior: 'smooth' });
+  });
+});
