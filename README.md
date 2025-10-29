@@ -20,14 +20,17 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-![tela inicial](<imagens/tela inical.jpeg>)
+![](<public/imagens/tela inical.jpeg>)
+
 
 ## Print da página de detalhes do item
 
-![detalhe01](<imagens/detalhe 01.jpeg>)
-![detalhe02](<imagens/detalhe 02.jpeg>)
+![](<public/imagens/detalhe 01.jpeg>)
+![](<public/imagens/detalhe 02.jpeg>)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
+
+```javascript
 
 // Efeito suave de rolagem nos links do menu
 document.querySelectorAll('nav a').forEach(anchor => {
@@ -37,3 +40,5 @@ document.querySelectorAll('nav a').forEach(anchor => {
     alvo.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+```
